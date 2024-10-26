@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+h2{
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 10px;
+
+}
+.game-container{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.btn{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: none;
+    box-shadow: 0 0 5px #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:active{
+        transform: scale(0.9);
+    }
+}
+.red{
+    background-color: rgb(238, 151, 151);
+}
+.blue{
+    background-color: rgb(151, 151, 238);
+}
+.green{
+    background-color: rgb(151, 238, 151);
+}
+ .yellow{
+    background-color: rgb(238, 238, 151);
+ }
+
+ .flash{
+    background-color: #fff;
+    opacity: 0.8;
+    transition: background-color 0.5s ease-in-out;
+ }
+ .userClick{
+    background-color: #35db2f;
+    transition: background-color 0.5s ease-in-out;
+ }
+ .game-over{
+
+    background-color: red;
+    transition: background-color 0.5s ease-in-out;
+    
+ }
